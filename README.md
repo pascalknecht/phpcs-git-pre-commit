@@ -9,17 +9,18 @@ Inspired by [Enforce code standards with composer, git hooks, and phpcs](http://
 
 ## Installation
 
-Install `pascalknecht/phpcs-git-pre-commit` with composer require command:
+Install `pascalknecht/phpcs-git-pre-commit` via composer.json File
 
-    composer require "pascalknecht/phpcs-git-pre-commit"
-
-Or alternatively, include a dependency for `pascalknecht/phpcs-git-pre-commit` in your composer.json file manually:
-
-    {
-        "require-dev": {
-            "pascalknecht/phpcs-git-pre-commit": "dev-master"
+     "repositories": [
+        { "type": "composer", "url": "https://wpackagist.org" },
+        {
+            "type": "vcs",
+            "url": "https://github.com/pascalknecht/phpcs-git-pre-commit"
         }
-    }
+    ],
+    "require-dev": {
+        "pascalknecht/phpcs-git-pre-commit": "dev-master"
+    },
 
 To enable code sniff, аdd to `post-install-cmd` and `post-update-cmd` in `composer.json` installation script:
 
