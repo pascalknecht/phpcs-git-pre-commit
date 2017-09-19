@@ -22,7 +22,7 @@ Install `pascalknecht/phpcs-git-pre-commit` via composer.json File
         "pascalknecht/phpcs-git-pre-commit": "dev-master"
     },
 
-To enable code sniff, аdd to `post-install-cmd` and `post-update-cmd` in `composer.json` installation script:
+To enable the installtion pre-commit hook, аdd to `post-install-cmd` and `post-update-cmd` in `composer.json` installation script:
 
     "post-install-cmd": [
         "sh ./vendor/pascalknecht/phpcs-git-pre-commit/src/setup.sh"
